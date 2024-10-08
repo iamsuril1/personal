@@ -5,11 +5,10 @@
     box-sizing: border-box;
 }
 
-/* Scale the entire website by 125% */
 html {
-    transform: scale(1.25); /* 125% scale */
-    transform-origin: top left; /* Ensures scaling happens from the top left corner */
-    width: 80%; /* Adjust width to prevent horizontal scrolling */
+    transform: scale(1.25); 
+    transform-origin: top left;
+    width: 80%; 
 }
 
 /* Header Section */
