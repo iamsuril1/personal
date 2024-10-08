@@ -1,0 +1,187 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Scale the entire website by 125% */
+html {
+    transform: scale(1.25); /* 125% scale */
+    transform-origin: top left; /* Ensures scaling happens from the top left corner */
+    width: 80%; /* Adjust width to prevent horizontal scrolling */
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header {
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+}
+
+.intro:hover {
+    color: black;
+}
+
+.header1, .header2 {
+    flex: 1;
+}
+
+.header1 {
+    text-align: left;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.3s ease;
+    font-size: larger;
+}
+
+nav ul li a:hover {
+    color: black;
+    font-size: x-large;
+}
+
+/* First Section (original size) */
+.section1 {
+    background-color: #e2e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.leftSection, .rightSection {
+    flex: 1;
+}
+
+.name {
+    margin: 50px;
+    font-size: 50px;
+}
+
+.webDeveloper {
+    color: purple;
+}
+
+#img {
+    width: 500px;
+    height: 500px;
+}
+
+.btn {
+    margin: 25px;
+    background-color: #e2e8e9;
+    border: 1px solid black;
+    border-radius: 50px 0px 50px 0px;
+    height: 50px;
+    width: 200px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+/* Second Section: Skills (smaller size) */
+.heading {
+    text-align: center;
+    color: red;
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.skills {
+    width: 60%; /* Reduced the overall width */
+    margin: 40px auto;
+}
+
+.skill {
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.skill p {
+    font-size: 14px; /* Smaller font for the skill names */
+    margin-bottom: 5px; /* Less margin */
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 50px;
+    overflow: hidden;
+    height: 20px; /* Reduced height of the skill bar */
+}
+
+.skill-level {
+    height: 20px; /* Matches the reduced height of the skill bar */
+    line-height: 20px;
+    background-color: skyblue;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    width: 0;
+    border-radius: 50px;
+}
+
+.html {
+    background-color: #e34c26;
+}
+
+.css {
+    background-color: #264de4;
+}
+
+.js {
+    background-color: #f0db4f;
+    color: black;
+}
+
+.react {
+    background-color: #61dafb;
+    color: black;
+}
+
+/* Animation */
+@keyframes fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--level);
+    }
+}
+
+.skill-level {
+    animation: fill 2s forwards;
+}
