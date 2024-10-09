@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suril's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="header" id="header">
-        <div class="header1">
-            <p class="intro">Suril's Portfolio</p>
-        </div>
-        <div class="header2">
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>    
+      <div class="header1">
+        <p class="intro">Suril's Portfolio</p>
+      </div>
+      <div class="header2">
+        <nav>
+          <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </section>
 
     <!--First Section-->
-    <section class="section1">
-        <div class="leftSection">
-            <p class="name">I'm <span class="webDeveloper">Suril Pokharel.</span><br/>I'm <span class="webDeveloper" id="element"></span></p>
-            <form action="">
-                <button class="btn"><a href="">Download CV</a></button>
-                <button class="btn"><a href="https://github.com/iamsuril1">Project Source</a></button>
-            </form>
-        </div>
-        <div class="rightSection">
-            <img src="126.png" alt="Suril's image" id="img">
-        </div>
+    <section class="section1" id="about">
+      <div class="leftSection">
+        <p class="name">
+          I'm <span class="webDeveloper">Suril Pokharel.</span><br />I'm
+          <span class="webDeveloper" id="element"></span>
+        </p>
+        <form action="">
+          <button class="btn"><a href="">Download CV</a></button>
+          <button class="btn">
+            <a href="https://github.com/iamsuril1">Project Source</a>
+          </button>
+        </form>
+      </div>
+      <div class="rightSection">
+        <img src="126.png" alt="Suril's image" id="img" />
+      </div>
     </section>
 
     <!-- Second Section: Skills -->
-    <section class="section2">
-        <p class="heading">SKILLS</p>
-        <div class="skills">
-            <div class="skill">
-                <p class="skilled">HTML</p>
-                <div class="skill-bar">
-                    <div class="skill-level html">90%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skilled">CSS</p>
-                <div class="skill-bar">
-                    <div class="skill-level css">70%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skilled">JavaScript</p>
-                <div class="skill-bar">
-                    <div class="skill-level js">60%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <p class="skilled">React</p>
-                <div class="skill-bar">
-                    <div class="skill-level react">30%</div>
-                </div>
-            </div>
+    <section class="section2" id="skills">
+      <p class="heading">SKILLS</p>
+      <div class="skills">
+        <div class="skill">
+          <p class="skilled">HTML</p>
+          <div class="skill-bar">
+            <div class="skill-level html">90%</div>
+          </div>
         </div>
+        <div class="skill">
+          <p class="skilled">CSS</p>
+          <div class="skill-bar">
+            <div class="skill-level css">70%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skilled">JavaScript</p>
+          <div class="skill-bar">
+            <div class="skill-level js">60%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <p class="skilled">React</p>
+          <div class="skill-bar">
+            <div class="skill-level react">30%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!--Third Section-->
+
+    <section class="education" id="education">
+      <p class="heading">EDUCATION</p>
+      <div>
+        <ul class="educations">
+          <li>Bachelor of Science in Computer Science
+            <ul>
+            <li>Herald College Kathmandu</li>
+            <li>University of Wolverhampton</li>
+          </ul>
+          </li>
+          <li>10+2
+            <ul>
+              <li>Reliance International Academy</li>
+              <li>NEB</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

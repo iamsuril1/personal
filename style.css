@@ -1,186 +1,185 @@
-/* Global Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    transform: scale(1.25); 
-    transform-origin: top left;
-    width: 80%; 
+  transform: scale(1.25);
+  transform-origin: top left;
+  width: 80%;
 }
 
-/* Header Section */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #header {
-    background-color: skyblue;
-    color: white;
-    padding: 20px;
+  background-color: skyblue;
+  color: white;
+  padding: 20px;
 }
 
 .intro:hover {
-    color: black;
+  color: black;
 }
 
-.header1, .header2 {
-    flex: 1;
+.header1,
+.header2 {
+  flex: 1;
 }
 
 .header1 {
-    text-align: left;
-    font-size: 32px;
+  text-align: left;
+  font-size: 32px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul li {
-    margin: 0 20px;
-    padding: 10px 20px;
-    font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 20px;
+  font-size: 18px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    transition: font-size 0.3s ease;
-    font-size: larger;
+  text-decoration: none;
+  color: white;
+  transition: font-size 0.3s ease;
+  font-size: larger;
 }
 
 nav ul li a:hover {
-    color: black;
-    font-size: x-large;
+  color: black;
+  font-size: x-large;
 }
 
-/* First Section (original size) */
 .section1 {
-    background-color: #e2e8e9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid black;
-    padding: 30px;
+  background-color: #e2e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 30px;
 }
 
-.leftSection, .rightSection {
-    flex: 1;
+.leftSection,
+.rightSection {
+  flex: 1;
 }
 
 .name {
-    margin: 50px;
-    font-size: 50px;
+  margin: 50px;
+  font-size: 50px;
 }
 
 .webDeveloper {
-    color: purple;
+  color: purple;
 }
 
 #img {
-    width: 500px;
-    height: 500px;
+  width: 500px;
+  height: 500px;
 }
 
 .btn {
-    margin: 25px;
-    background-color: #e2e8e9;
-    border: 1px solid black;
-    border-radius: 50px 0px 50px 0px;
-    height: 50px;
-    width: 200px;
+  margin: 25px;
+  background-color: #e2e8e9;
+  border: 1px solid black;
+  border-radius: 50px 0px 50px 0px;
+  height: 50px;
+  width: 200px;
 }
 
 .btn:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .btn a {
-    text-decoration: none;
-    color: black;
-    font-size: large;
+  text-decoration: none;
+  color: black;
+  font-size: large;
 }
-
 
 .heading {
-    text-align: center;
-    color: red;
-    margin-top: 40px;
-    font-size: 30px;
-    font-weight: bold;
+  text-align: center;
+  color: red;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
 }
-/*Second Section*/
+
 .skills {
-    width: 60%; 
-    margin: 40px auto;
+  width: 60%;
+  margin: 40px auto;
 }
 
 .skill {
-    margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .skill p {
-    font-size: 14px; 
-    margin-bottom: 5px;
-    font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .skill-bar {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 50px;
-    overflow: hidden;
-    height: 20px; /* Reduced height of the skill bar */
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 20px;
 }
 
 .skill-level {
-    height: 20px; /* Matches the reduced height of the skill bar */
-    line-height: 20px;
-    background-color: skyblue;
-    text-align: right;
-    padding-right: 10px;
-    color: white;
-    font-weight: bold;
-    width: 0;
-    border-radius: 50px;
+  height: 20px;
+  line-height: 20px;
+  background-color: skyblue;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  font-weight: bold;
+  width: 0;
+  border-radius: 50px;
+  animation: fill 2s forwards;
 }
 
 .html {
-    background-color: #e34c26;
+  background-color: #e34c26;
 }
 
 .css {
-    background-color: #264de4;
+  background-color: #264de4;
 }
 
 .js {
-    background-color: #f0db4f;
-    color: black;
+  background-color: #f0db4f;
+  color: black;
 }
 
 .react {
-    background-color: #61dafb;
-    color: black;
+  background-color: #61dafb;
+  color: black;
 }
 
-/* Animation */
 @keyframes fill {
-    from {
-        width: 0;
-    }
-    to {
-        width: var(--level);
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--level);
+  }
 }
 
 .skill-level {
-    animation: fill 2s forwards;
+  animation: fill 2s forwards;
 }
+
